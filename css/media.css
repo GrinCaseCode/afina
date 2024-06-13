@@ -43,6 +43,7 @@
     .header {
         font-size: 13px;
         padding: 5px 0;
+        transition: all 0.3s;
     }
     .title-billbord {
         font-size: 28px;
@@ -192,7 +193,7 @@
     }
     .footer__logo {
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .footer__location {
         margin-bottom: 10px;
@@ -292,7 +293,7 @@
         margin: 0;
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     .header__contact:nth-child(2) {
         font-size: 14px;
@@ -337,6 +338,24 @@
     }
     .menu-mobile .list-socials {
         margin-top: 20px;
+    }
+    .footer__contacts {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .footer__item {
+        margin-bottom: 15px;
+        width: 50%;
+    }
+    .footer__item:nth-child(2) {
+        margin-top: -2px;
+    }
+    .footer__contacts p {
+        margin-bottom: 4px;
+    }
+    .footer__contacts p:last-child {
+        margin-bottom: 0;
     }
 }
 
