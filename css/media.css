@@ -14,6 +14,7 @@
         font-size: 13px;
         display: none;
     }
+    .wrapper_page .header .logo img,
     .header.fixed .logo img,
     .logo img {
         width: 60px;
@@ -128,10 +129,6 @@
         padding: 10px;
         padding-bottom: 20px;
         font-size: 18px;
-    }
-    .item-category__image {
-        height: 135px;
-        margin-bottom: 10px;
     }
     .item-category::after {
         bottom: 15px;
@@ -308,7 +305,7 @@
     .header__contact:nth-child(1) {
         max-width: 152px;
     }
-    .menu ul {
+    /* .menu ul {
         width: 100%;
         padding: 0;
         padding-top: 15px;
@@ -327,7 +324,7 @@
     }
     .menu ul li a {
         display: block;
-    }
+    } */
     .menu li a::before {
         display: none;
     }
@@ -358,6 +355,147 @@
     .footer__contacts p:last-child {
         margin-bottom: 0;
     }
+    .wrapper_page {
+        padding-top: 56px;
+    }
+    .page-contacts {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+    .page-contacts .title-section {
+        padding-bottom: 30px;
+    }
+    .contacts-block {
+        padding: 20px 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .contacts-block__title {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .contacts-block__subtitle {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .contacts-block__subtitle:not(:first-child) {
+        margin-top: 15px;
+    }
+    .contacts-block__value {
+        font-size: 17px;
+    }
+    .contacts-block__value span {
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    .contacts-block__item,
+    .contacts-block__item:last-child {
+        margin-bottom: 15px;
+    }
+    #map {
+        height: 350px;
+        margin-top: 30px;
+    }
+    .page-news {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .page-news .title-section {
+        margin-bottom: 25px;
+    }
+    .item-news__image {
+        height: 165px;
+    }
+    .item-news__content {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .item-news__title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .item-news {
+        font-size: 13px;
+    }
+    .item-news::after {
+        width: 21px;
+        height: 21px;
+        bottom: 12px;
+        right: 12px;
+    }
+    .pager {
+        height: 40px;
+        margin-top: 30px;
+    }
+    .prev.page-numbers, .next.page-numbers {
+        height: 40px;
+        width: 40px;
+        font-size: 17px;
+    }
+    .page-numbers {
+        margin: 0 18px;
+    }
+    .page-news .row.row_main > div {
+        margin-bottom: 20px;
+    }
+    .page-news .row.row_main {
+        margin-bottom: -20px;
+    }
+
+    .menu li i {
+        display: block;
+    }
+    .menu > li.menu__haschild > i {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transition: all 0.3s;
+    }
+    .menu li {
+        position: relative;
+    }
+    .menu > li.menu__haschild > a::after {
+        display: none;
+    }
+    .menu__dropdown {
+        padding: 15px;
+        font-size: 13px;
+        visibility: visible;
+        opacity: 1;
+        transition: initial;
+        display: block;
+        position: relative;
+        top: 0;
+        display: none;
+    }
+    .menu__dropdown ul {
+        columns: 2;
+    }
+    .menu > li.menu__haschild.active > i {
+        transform: rotate(180deg);
+    }
+    .page-categories .title-section {
+        margin-bottom: 30px;
+    }
+    .page-categories {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .item-category {
+        height: 195px;
+    }
+    .footer {
+        font-size: 13px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -387,6 +525,9 @@
     .billbord__socials {
         display: none;
     }
+    .item-category {
+        height: 250px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -409,12 +550,9 @@
         font-size: 16px;
         padding: 15px;
     }
-    .item-category__image {
-        height: 115px;
-        margin-bottom: 5px;
-    }
     .item-category {
         font-size: 14px;
+        height: 220px;
     }
     .item-category::after {
         bottom: 5px;

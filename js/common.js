@@ -46,12 +46,12 @@ $(".menu-overlay").click(function() {
 
 {
 	if ($(window).width() < 992) { 
-		$(".menu__haschild > a").click(function(e) {
+		$(".menu__haschild i").click(function(e) {
 			e.preventDefault();
 			$(this).parent().siblings().removeClass("active");
-			$(this).parent().siblings().find("ul").slideUp(200);
+			$(this).parent().siblings().find(".menu__dropdown").slideUp(200);
 			$(this).parent().toggleClass("active");
-			$(this).siblings("ul").slideToggle(200);
+			$(this).siblings(".menu__dropdown").slideToggle(200);
 			
 		});
 	}
