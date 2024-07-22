@@ -551,7 +551,7 @@
         padding: 15px;
     }
     .item-category {
-        font-size: 14px;
+        font-size: 16px;
         height: 220px;
     }
     .item-category::after {
