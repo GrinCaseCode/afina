@@ -1,6 +1,25 @@
 $(document).ready(function() {
 
 
+	$('.video-main').click(function() {
+		var videoURL = $(this).find("iframe").prop('src');
+		videoURL += "&autoplay=1";
+		$(this).find("iframe").prop('src',videoURL);
+		$(this).addClass("active");
+	  });
+
+	  $(".item-sidebar__head").click(function() {
+		$(this).parent().siblings().removeClass("active");
+		$(this).parent().siblings().find(".item-sidebar__content").slideUp(200);
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-sidebar__content").slideToggle(200);
+	});
+	$(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){
@@ -19,7 +38,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
   }
 
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".nav-article li a").mPageScroll2id({
+		offset: 80
+	});
 
 
 //кнопка sandwich
@@ -88,6 +109,39 @@ $(".menu-overlay").click(function() {
 					dots: true,
 				}
 			}
+			]
+		});
+
+		$('.slider-for').slick({
+			arrows: false,
+			dots: false,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.slider-nav',
+			touchThreshold: 1000,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
+		});
+	
+		$('.slider-nav').slick({
+			arrows: true,
+			dots: false,
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			touchThreshold: 1000,
+			focusOnSelect: true,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-long-arrow-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-long-arrow-right"></i><div/>',
+			responsive: [
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 3,
+					}
+				}
 			]
 		});
 
