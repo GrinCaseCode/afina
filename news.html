@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body>
 
@@ -41,7 +41,18 @@
 					</div>
 					<ul class="menu">
 						<li><a href="#">главная</a></li>
-						<li><a href="#">О ЗАВОДЕ</a></li>
+						<li class="menu__haschild menu__parent">
+							<a href="#">О ЗАВОДЕ</a>
+							<i class="far fa-chevron-down"></i>
+							<div class="menu__dropdown">
+								<ul>
+									<li><a href="#">Производство</a></li>
+									<li><a href="#">Складской комплекс</a></li>
+									<li><a href="#">Наша команда</a></li>
+									<li><a href="#">Благотворительность</a></li>
+								</ul>
+							</div>
+						</li>
 						<li class="menu__haschild">
 							<a href="#">КАТАЛОГ</a>
 							<i class="far fa-chevron-down"></i>
@@ -83,7 +94,16 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="#">СПРАВОЧНАЯ ИНФОРМАЦИЯ</a></li>
+						<li class="menu__haschild menu__parent">
+							<a href="#">СПРАВОЧНАЯ ИНФОРМАЦИЯ</a>
+							<i class="far fa-chevron-down"></i>
+							<div class="menu__dropdown">
+								<ul>
+									<li><a href="#">ГОСТ</a></li>
+									<li><a href="#">Сертификаты</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">НАШИ КЛИЕНТЫ</a></li>
 						<li><a href="#">НОВОСТИ</a></li>
 						<li><a href="#">КОНТАКТЫ</a></li>
@@ -101,7 +121,18 @@
 			<div class="menu-mobile">
 				<ul class="menu">
 					<li><a href="#">главная</a></li>
-					<li><a href="#">О ЗАВОДЕ</a></li>
+					<li class="menu__haschild menu__parent">
+						<a href="#">О ЗАВОДЕ</a>
+						<i class="far fa-chevron-down"></i>
+						<div class="menu__dropdown">
+							<ul>
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Складской комплекс</a></li>
+								<li><a href="#">Наша команда</a></li>
+								<li><a href="#">Благотворительность</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="menu__haschild">
 						<a href="#">КАТАЛОГ</a>
 						<i class="far fa-chevron-down"></i>
@@ -143,7 +174,16 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">СПРАВОЧНАЯ ИНФОРМАЦИЯ</a></li>
+					<li class="menu__haschild menu__parent">
+						<a href="#">СПРАВОЧНАЯ ИНФОРМАЦИЯ</a>
+						<i class="far fa-chevron-down"></i>
+						<div class="menu__dropdown">
+							<ul>
+								<li><a href="#">ГОСТ</a></li>
+								<li><a href="#">Сертификаты</a></li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="#">НАШИ КЛИЕНТЫ</a></li>
 					<li><a href="#">НОВОСТИ</a></li>
 					<li><a href="#">КОНТАКТЫ</a></li>
@@ -353,7 +393,7 @@
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.5"></script>
+	<script src="js/common.js?ver=1.7"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
