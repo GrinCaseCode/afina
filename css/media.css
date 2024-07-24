@@ -15,7 +15,7 @@
         display: none;
     }
     .wrapper_page .header .logo img,
-    .header.fixed .logo img,
+    .header.fixed .logo img, 
     .logo img {
         width: 60px;
     }

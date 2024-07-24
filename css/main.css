@@ -23,7 +23,7 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
-
+ 
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.833vw;
