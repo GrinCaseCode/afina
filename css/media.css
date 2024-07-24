@@ -886,6 +886,12 @@
     .item-sertificat__title {
         padding: 0 7px;
     }
+    .page-gosts {
+        background-image: url(../img/bg_sertificats.svg);
+    }
+    .page-sertificats {
+        background-image: url(../img/bg_production.svg);
+    }
 }
 
 /* Small Devices, Tablets */
@@ -967,6 +973,16 @@
         object-fit: cover;
         font-family: 'object-fit: cover;';
     }
+    .item-sertificat__title {
+        padding: 0;
+    }
+    .item-sertificat__image {
+        height: 220px;
+        margin-bottom: 9px;
+    }
+    .item-sertificat {
+        max-width: 166px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -977,16 +993,6 @@
     }
     .title-billbord strong {
         font-size: 24px;
-    }
-    .item-sertificat__title {
-        padding: 0;
-    }
-    .item-sertificat__image {
-        height: 220px;
-        margin-bottom: 9px;
-    }
-    .item-sertificat {
-        max-width: 166px;
     }
 }
 
