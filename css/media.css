@@ -892,6 +892,23 @@
     .page-sertificats {
         background-image: url(../img/bg_production.svg);
     }
+
+    .billbord {
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    .billbord__socials {
+        top: -38px;
+    }
+    .billbord__title {
+        font-size: 23px;
+    }
+    .billbord__title strong {
+        font-size: 44px;
+    }
+    .billbord__title span {
+        font-size: 33px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -927,6 +944,23 @@
     .item-sertificat {
         max-width: 220px;
         margin: 0 auto;
+    }
+
+    .billbord__heading {
+        margin: 0;
+    }
+    .billbord__title {
+        font-size: 18px;
+    }
+    .billbord__title strong {
+        font-size: 30px;
+    }
+    .billbord__title span {
+        font-size: 28px;
+    }
+    .billbord {
+        padding-top: 170px;
+        padding-bottom: 0;
     }
 }
 
@@ -982,6 +1016,20 @@
     }
     .item-sertificat {
         max-width: 166px;
+    }
+
+    .billbord__title {
+        font-size: 15px;
+    }
+    .billbord__title strong {
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .billbord__title span {
+        font-size: 24px;
+    }
+    .billbord__heading {
+        margin-bottom: 15px;
     }
 }
 

@@ -1964,3 +1964,55 @@ form {
 	padding-right: 1.93vw;
 	display: block;
 }
+
+.menu__dropdown ul li a {
+    display: block;
+}
+.billbord {
+    background-image: url(../img/billbord1.jpg);
+    position: relative;
+    z-index: 1;
+}
+.billbord__heading {
+    margin-top: -2.0833vw;
+    margin-bottom: -3.6458vw;
+	pointer-events: none;
+}
+.billbord__heading img {
+    width: 100%;
+    height: auto;
+}
+.billbord__title {
+    font-size: 1.6667vw;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Gotham Pro';
+    text-align: center;
+}
+.billbord__title strong {
+    font-size: 3.6458vw;
+    line-height: 103%;
+    font-weight: 900;
+    display: block;
+}
+.billbord__title span {
+    font-size: 3.125vw;
+    display: block;
+    text-transform: none;
+}
+.bottom-button {
+    padding-top: 1.8229vw;
+    text-align: center;
+}
+.btn-main.btn-main_page {
+    border-radius: 0.3125vw;
+    font-weight: 600;
+    color: #2b160e;
+    border: 1px solid #2b160e;
+    background-color: #fff;
+}
+.btn-main.btn-main_page:hover {
+    background-color: #2b160e;
+    color: #fff;
+}
