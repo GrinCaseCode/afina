@@ -909,6 +909,12 @@
     .billbord__title span {
         font-size: 33px;
     }
+    .bottom-button {
+        padding-top: 30px;
+    }
+    .btn-main.btn-main_page {
+        border-radius: 6px;
+    }
 }
 
 /* Small Devices, Tablets */
